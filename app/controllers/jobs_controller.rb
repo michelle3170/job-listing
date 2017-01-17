@@ -31,7 +31,7 @@ class JobsController < ApplicationController
 
     if @job.update(job_params)
 
-      redirect_to jobs_path, notice: "Update Success"
+      redirect_to jobs_path
     else
       render :edit
     end
