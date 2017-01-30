@@ -2,6 +2,9 @@ Rails.application.routes.draw do
   devise_for :users
 
   resources :jobs do
+    member do
+      get :search
+    end
     resources :resumes
   end
 
